@@ -3,11 +3,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainFragment">
 
     <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BinusWIKI"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/announcements_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Announcements"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        />
+
+    <ImageView
+        android:id="@+id/announcements_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Test" />
+        android:layout_height="150dp"
+        android:src="@drawable/announcement_placeholder"
+        app:layout_constraintTop_toBottomOf="@id/announcements_text"
+        />
+
+    <TextView
+        android:id="@+id/promotions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Promotions"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/announcements_image"
+        />
+
+    <ImageView
+        android:id="@+id/promotions_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/promotion_placeholder"
+        app:layout_constraintTop_toBottomOf="@id/promotions_text"
+        />
+
+    <Button
+        android:id="@+id/directory_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Campus Directory"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:letterSpacing="0"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promotions_image"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class CulinaryDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        getSupportFragmentManager().beginTransaction().add(R.id.main_content, new MainFragment()).commit();
+        setContentView(R.layout.activity_culinary_detail);
     }
 }
